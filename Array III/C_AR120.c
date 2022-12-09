@@ -5,7 +5,7 @@ long long func(int);
 long long f[36] = {0};
 
 int main(){
-    for(int i=0; i<=35; i++){
+    for(int i=0; i<=35; i++){//建表
         f[i] = func(i);
     }
     int n;
