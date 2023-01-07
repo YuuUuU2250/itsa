@@ -14,7 +14,7 @@ int main(){
             }
             if(A != 4){
                 for(int i=0; i<4; i++){
-                    for(int j=i; j<4; j++){
+                    for(int j=0; j<4; j++){
                         if(i != j && ans[i] == inp[j]){//位置錯誤數字正確
                             B++;
                         }
