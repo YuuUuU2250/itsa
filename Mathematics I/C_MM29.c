@@ -10,7 +10,7 @@ int main(){
             if(!(i % prime[j])){
                 break;
             }
-            if(j == primes - 1){
+            if(j == primes - 1){//檢查到最後都沒有因數，為質數
                 prime[primes++] = i;
                 break;
             }
