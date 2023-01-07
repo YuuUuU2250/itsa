@@ -21,11 +21,11 @@ long long func(int n){
         return 1;
     }
     long long ans = 0;
-    for(int i=0; i<n/2; i++){
+    for(int i=0; i<n/2; i++){//遞迴算式對稱
         ans += f[i] * f[n-1-i];
     }
     ans *= 2;
-    if(n%2){
+    if(n%2){//n is odd
         ans += f[n/2] * f[n/2];
     }
     return ans;
