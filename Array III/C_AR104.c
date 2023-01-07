@@ -10,10 +10,10 @@ int main(){
         outp[i] = inp[i];
         sum[i] = 0;
         int j = 1;
-        while(inp[i] % j != inp[i]){
+        while(inp[i] % j != inp[i]){//計算input是幾位數字
             j *= 10;
         }
-        do{
+        do{//從最高位數加總下來
             sum[i] += inp[i] / j;
             inp[i] %= j;
             j /= 10;
@@ -32,7 +32,7 @@ int main(){
                 outp[j+1] = temOutp;
             }
             else if(sum[j] == sum[j+1]){
-                if(outp[j] > outp[j+1]){
+                if(outp[j] > outp[j+1]){//各位數和相等時，比較數字本身大小
                     temSum = sum[j];
                     temOutp = outp[j];
                     sum[j] = sum[j+1];
