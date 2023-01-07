@@ -9,7 +9,7 @@ int main(){
             printf(" %d", i * 35);
         }
         else{
-            printf("%d", i*35);
+            printf("%d", i * 35);
         }
     }
     printf("\n");
